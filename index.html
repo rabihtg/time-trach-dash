@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./index.js" defer></script>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="info-card flex">
+        <div class="title flex">
+          <img src="./images/image-jeremy.png" alt="Jeremy Robson's profile" />
+          <h1 class="fs-lg">
+            <div class="faded-text">Report for</div>
+            Jeremy Robson
+          </h1>
+        </div>
+        <div class="menu flex">
+          <button class="menu-btn daily">Daily</button>
+          <button class="menu-btn weekly">Weekly</button>
+          <button class="menu-btn monthly">Monthly</button>
+        </div>
+      </div>
+      <div class="card-container flow">
+        <div class="card" id="work">
+          <div class="card-overlay flex">
+            <img src="./images/icon-work.svg" alt="work icon" />
+          </div>
+          <p class="current-title">Work</p>
+          <p class="current-value">5hrs</p>
+          <button class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </button>
+          <p class="prev">Previous - 7hrs</p>
+        </div>
+        <div class="card flex" id="play">
+          <div class="card-overlay flex">
+            <img src="./images/icon-play.svg" alt="play icon" />
+          </div>
+          <p class="current-title">Play</p>
+          <p class="current-value">1hr</p>
+          <button class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </button>
+          <p class="prev">Previous - 2hrs</p>
+        </div>
+        <div class="card flex" id="study">
+          <div class="card-overlay flex">
+            <img src="./images/icon-study.svg" alt="study icon" />
+          </div>
+          <p class="current-title">Study</p>
+          <p class="current-value">0hrs</p>
+          <button class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </button>
+          <p class="prev">Previous - 1hr</p>
+        </div>
+        <div class="card flex" id="exercise">
+          <div class="card-overlay flex">
+            <img src="./images/icon-exercise.svg" alt="exercise icon" />
+          </div>
+          <p class="current-title">Exercise</p>
+          <p class="current-value">1hr</p>
+          <button class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </button>
+          <p class="prev">Previous - 1hr</p>
+        </div>
+        <div class="card flex" id="social">
+          <div class="card-overlay flex">
+            <img src="./images/icon-social.svg" alt="social icon" />
+          </div>
+          <p class="current-title">Social</p>
+          <p class="current-value">1hr</p>
+          <button class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </button>
+          <p class="prev">Previous - 3hrs</p>
+        </div>
+        <div class="card flex" id="selfCare">
+          <div class="card-overlay flex">
+            <img src="./images/icon-self-care.svg" alt="self care icon" />
+          </div>
+          <p class="current-title">Self Care</p>
+          <p class="current-value">0hrs</p>
+          <button class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </button>
+          <p class="prev">Previous - 1hr</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
