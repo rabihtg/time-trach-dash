@@ -12,8 +12,11 @@ $(".monthly").click(function () {
   setData("monthly");
 });
 
+$(document).ready(function () {
+  setData(localStorage.selectedTimeFrame);
+});
+
 function setData(timeFrame) {
-  console.log(timeFrame);
   data.responseJSON.forEach((item, i) => {
     let prev_uom = "hrs";
     let current_uom = "hrs";
@@ -25,10 +28,12 @@ function setData(timeFrame) {
     if (current_data == 1) {
       current_uom = "hr";
     }
-
     card_data[i].innerText =
       item["timeframes"][timeFrame]["current"] + current_uom;
     card_prev_data[i].innerText =
       "Previous - " + item["timeframes"][timeFrame]["previous"] + prev_uom;
   });
+  document.querySelector(".selected").classList.remove("selected");
+  document.querySelector("." + timeFrame).classList.add("selected");
+  localStorage.selectedTimeFrame = timeFrame;
 }

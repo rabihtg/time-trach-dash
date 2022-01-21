@@ -140,7 +140,11 @@ body {
   justify-content: space-between;
 }
 .menu-btn {
+  user-select: none;
   color: hsl(var(--color-desaturated-blue));
+}
+.selected {
+  color: #f7f7f7;
 }
 .menu-btn:hover,
 .menu-btn:focus {
